@@ -1,0 +1,41 @@
+.itemAnimate > *{
+    animation-name: itemAnimate;
+    animation-timing-function: cubic-bezier(0.58, -0.02, 0.38, 0.99);
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    transform: translateY(0px);
+  }
+  .itemAnimate > *:nth-child(1) {
+    animation-delay: 0.10s;
+  }
+  
+  .itemAnimate > *:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+  
+  .itemAnimate > *:nth-child(3) {
+    animation-delay: 0.20s;
+  }
+  
+  .itemAnimate > *:nth-child(4) {
+    animation-delay: 0.25s;
+  }
+  
+  .itemAnimate > *:nth-child(5) {
+    animation-delay: 0.30s;
+  }
+  .itemAnimate > *:nth-child(6) {
+    animation-delay: 0.35s;
+  }
+  
+  @keyframes itemAnimate {
+    from {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    to {
+      opacity: 100;
+      transform: translateY(0px);
+    }
+  }  

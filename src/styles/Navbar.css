@@ -1,0 +1,35 @@
+.menu{
+  opacity: 0;
+  transform: translateY(20px);
+}
+.showMenu {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.4,0,0.1,1);
+  opacity: 1;
+}
+
+.hideMenu {
+  transition-property: all;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.4,0,0.1,1);
+  transform: translateY(40px);
+}
+
+.itemAnimate > *{
+  animation-name: itemAnimate;
+  animation-timing-function: cubic-bezier(0.58, -0.02, 0.38, 0.99);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+@keyframes itemAnimate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+
