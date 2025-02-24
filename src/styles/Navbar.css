@@ -1,19 +1,20 @@
 .menu{
   opacity: 0;
-  transform: translateY(20px);
+  z-index: -1000;
 }
 .showMenu {
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.4,0,0.1,1);
+  width: fit-content;
   opacity: 1;
 }
 
 .hideMenu {
   transition-property: all;
-  transition-duration: 0.8s;
+  transition-duration: 0.7s;
   transition-timing-function: cubic-bezier(0.4,0,0.1,1);
-  transform: translateY(40px);
+  transform: translateX(500px);
 }
 
 .itemAnimate > *{
@@ -32,4 +33,32 @@
   }
 }
 
+
+.animate-button{
+  position: relative;
+  cursor: pointer;
+}
+
+.animate-button::before{
+  content: '';
+  background: none;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0%;
+  border-radius:200px;
+  transition: 0.4s;
+  z-index: -10;
+}
+
+.animate-button:hover::before{
+  border-radius:200px;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary);
+
+}
 

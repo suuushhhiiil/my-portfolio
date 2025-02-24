@@ -1,0 +1,8 @@
+.heroSection {
+  background-image: url('../assets/hero-image.jpg');
+  background-size: cover;
+  background-position: 50%;
+}
+.headline {
+ line-height:1;
+}

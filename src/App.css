@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Croissant+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap');
 @media screen and (min-width: 480px) {
   body {
-    font-family: Montserrat;
-    overflow-y: hidden;
+    font-family: "DM Sans";
     overflow-x: hidden;
   }
+}
+body {
+  font-family: "DM Sans";
+  background-color: var(--background);
+  overflow-x: hidden;
+  transition: color 500ms ease-in-out;
 }
 .dark-theme {
   --background: #121212;
   --primary: #006aff;
-  --secondary: #8b8b8b;
+  --secondary: #212529;
   --accent : #b2b9ff;
   --text: #ffffff;
+  --text-invert: #121212;
   --link-text: #1F2937; 
   --heading-text: #ffffff;
   --white: #ffffff;
@@ -23,6 +29,7 @@
   --secondary: #e4e6f0;
   --accent : #b2b9ff;
   --text: #121212;
+  --text-invert: #ffffff;
   --link-text: #ffffff;
   --heading-text: #000000;
   --white: #ffffff;
