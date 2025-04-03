@@ -2,6 +2,7 @@ import { CgDesktop } from "react-icons/cg";
 import { MdAnimation, MdWeb } from "react-icons/md";
 import { FaPaintBrush, FaReact, FaJsSquare } from "react-icons/fa";
 import { SiAdobecreativecloud, SiNextui, SiTailwindcss } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 
 export const services = [
   {
@@ -40,7 +41,7 @@ export const skills = [
   },
   {
     title : 'Next.js',
-    icon: <SiAdobecreativecloud size={20}/>,
+    icon: <RiNextjsFill size={20}/>,
   },
   {
   title : 'GSAP',

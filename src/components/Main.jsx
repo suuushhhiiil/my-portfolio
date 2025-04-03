@@ -75,7 +75,7 @@ const Main = () => {
                                 {
                                     skills.map((skill) => (
                                         <li key={skill.title}>
-                                            <div className="rounded-full border-[0.1px] px-4 py-1 w-fit flex gap-x-3 text-nowrap lg:items-center lg:text-[18px] lg:font-extralight text-white">
+                                            <div className="rounded-full border-[0.1px] px-4 py-1 w-fit flex gap-x-3 text-nowrap lg:items-center lg:text-[18px] lg:font-light text-white">
                                                 <div className="flex items-center w-[18px]">
                                                     {skill.icon}
                                                 </div>
