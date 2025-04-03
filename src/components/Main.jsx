@@ -50,8 +50,8 @@ const Main = () => {
                                 {
                                     services.map((service) => (
                                         <li key={service.title}>
-                                            <div className="flex gap-x-5 text-nowrap lg:items-center text-lg lg:text-[20px] lg:font-light leading]">
-                                                <div className="hidden lg:flex">
+                                            <div className="flex gap-x-5 text-nowrap lg:items-center text-lg lg:text-[18px] lg:font-light leading]">
+                                                <div className="hidden lg:flex w-[20px]">
                                                     {service.icon}
                                                 </div>
                                                 {service.title}
@@ -66,17 +66,17 @@ const Main = () => {
 
 
                 <div className='lg:w-1/3 '>
-                    <div className='transition-color-800 bg-primary h-[65vh] p-8 rounded-[30px]'>
+                    <div className='transition-color-800 bg-primary h-[65vh] lg:p-8 p-4 rounded-[30px]'>
                         <p className='transition-color-500 font-sans font-semibold lg:text-[6vh] text-4xl text-white z-10'>
                             Skills
                         </p>
-                        <div className='flex flex-wrap justify-center lg:mt-10 mt-5 w-full overflow-clip'>
+                        <div className='flex flex-wrap justify-center lg:mt-4 mt-5 w-full overflow-clip'>
                             <ul className="flex flex-wrap gap-3 max-w-full">
                                 {
                                     skills.map((skill) => (
                                         <li key={skill.title}>
-                                            <div className="rounded-full border-[0.1px] border-white px-4 py-1 w-fit flex gap-x-3 text-nowrap lg:items-center text- lg:text-[18px] lg:font-extralight text-white">
-                                                <div className="flex items-center">
+                                            <div className="rounded-full border-[0.1px] px-4 py-1 w-fit flex gap-x-3 text-nowrap lg:items-center lg:text-[18px] lg:font-extralight text-white">
+                                                <div className="flex items-center w-[18px]">
                                                     {skill.icon}
                                                 </div>
                                                 {skill.title}
