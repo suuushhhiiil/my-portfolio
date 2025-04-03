@@ -53,7 +53,7 @@ const Main = () => {
                                             <div className="flex gap-x-5 text-nowrap lg:items-center text-lg lg:text-2xl font-extralight lg:font-light leading]">
                                                 <div className="hidden lg:flex">
                                                     {service.icon}
-                                                    </div>
+                                                </div>
                                                 {service.title}
                                             </div>
                                         </li>
@@ -70,15 +70,15 @@ const Main = () => {
                         <p className='transition-color-500 font-sans font-semibold lg:text-[6vh] text-4xl text-white z-10'>
                             Skills
                         </p>
-                        <div className='flex-wrap lg:mt-10 mt-5 lg:ml-4'>
-                            <ul className="flex">
+                        <div className='flex flex-wrap justify-center lg:mt-10 mt-5 w-full'>
+                            <ul className="flex flex-wrap gap-3 max-w-full">
                                 {
                                     skills.map((skill) => (
                                         <li key={skill.title}>
-                                            <div className=" mx-2 rounded-full bg-white px-4 py-1 w-fit flex gap-x-3 text-nowrap lg:items-center text-lg lg:text-2xl lg:font-light leading]">
+                                            <div className="rounded-full border-[0.4px] border-white px-4 py-1 w-fit flex gap-x-3 text-nowrap lg:items-center text-lg lg:text-2xl lg:font-extralight text-white">
                                                 <div className="flex items-center">
                                                     {skill.icon}
-                                                    </div>
+                                                </div>
                                                 {skill.title}
                                             </div>
                                         </li>

@@ -1,7 +1,8 @@
 import { CgDesktop } from "react-icons/cg";
-import { MdWeb } from "react-icons/md";
-import { FaPaintBrush } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
+import { MdAnimation, MdWeb } from "react-icons/md";
+import { FaPaintBrush, FaReact, FaJsSquare } from "react-icons/fa";
+import { SiAdobecreativecloud, SiNextui, SiTailwindcss } from "react-icons/si";
+
 export const services = [
   {
     title: "Frontend Development",
@@ -23,15 +24,31 @@ export const services = [
 export const skills = [
   {
     title : 'React.js',
-    icon: <FaReact  size={20}/>,
+    icon: <FaReact size={20}/>,
   },
   {
-    title : 'React.js',
-    icon: <FaReact  size={20}/>,
+    title : 'JavaScript',
+    icon: <FaJsSquare size={20}/>,
   },
   {
-    title : 'React.js',
-    icon: <FaReact  size={20}/>,
+    title : 'UI/UX',
+    icon: <SiNextui size={25}/>,
+  },
+  {
+    title : 'TailwindCSS',
+    icon: <SiTailwindcss size={20}/>,
+  },
+  {
+    title : 'Next.js',
+    icon: <SiAdobecreativecloud size={20}/>,
+  },
+  {
+  title : 'GSAP',
+  icon: <MdAnimation size={20}/>,
+  },
+  {
+    title : 'Adobe Creative Cloud',
+    icon: <SiAdobecreativecloud size={20}/>,
   },
 ]
  
