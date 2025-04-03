@@ -70,7 +70,7 @@ const Main = () => {
                         <p className='transition-color-500 font-sans font-semibold lg:text-[6vh] text-4xl text-white z-10'>
                             Skills
                         </p>
-                        <div className='flex flex-wrap justify-center lg:mt-10 mt-5 w-full'>
+                        <div className='flex flex-wrap justify-center lg:mt-10 mt-5 w-full overflow-clip'>
                             <ul className="flex flex-wrap gap-3 max-w-full">
                                 {
                                     skills.map((skill) => (
