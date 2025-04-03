@@ -9,7 +9,7 @@ body {
   font-family: "DM Sans";
   background-color: var(--background);
   overflow-x: hidden;
-  transition: color 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .dark-theme {
   --background: #121212;

@@ -38,7 +38,7 @@ const NavBar = () => {
   ];
   return (
     <>
-      <nav className="transition-color ease-in-out duration-[600ms] sticky top-0 pt-[10px] lg:pt-[30px] z-50 backdrop-blur-lg h-[15vh]">
+      <nav className="transition-all ease-in-out duration-[600ms] sticky top-0 pt-[10px] lg:pt-[30px] z-50 backdrop-blur-lg h-[15vh]">
         <div className="z-50 top-0 flex items-center justify-between lg:px-20 px-6 py-4 relative">
           {
             //Logo
@@ -53,7 +53,7 @@ const NavBar = () => {
             <div className="space-x-4 lg:flex justify-center items-center text-nowrap itemAnimate">
               <button
                 onClick={() => toggleTheme()}
-                className="transition-color ease-in-out duration-[300ms] rounded-full px-3 py-3 text-text bg-secondary hover:bg-text hover:text-link-text"
+                className="transition-all ease-in-out duration-[500ms] rounded-full px-3 py-3 text-text bg-secondary hover:bg-text hover:text-link-text"
               >
                 {theme === "light-theme" ? (
                   <Moon size={22} />
@@ -64,7 +64,7 @@ const NavBar = () => {
 
               <Link
                 to="/hire-me"
-                className={`hidden lg:flex transition-color ease-in-out duration-[300ms] rounded-full bg-text px-6 py-3 text-link-text font-semibold animate-button`}
+                className={`hidden lg:flex transition-all ease-in-out duration-[500ms] rounded-full bg-text px-6 py-3 text-link-text font-semibold animate-button`}
               >
                 Hire Me
               </Link>
