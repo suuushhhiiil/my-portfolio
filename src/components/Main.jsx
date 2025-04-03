@@ -45,12 +45,12 @@ const Main = () => {
                         <p className='transition-color-500 font-sans font-semibold lg:text-[6vh] text-4xl text-heading z-10'>
                             Services
                         </p>
-                        <div className='text-heading lg:mt-16 mt-5 lg:ml-4'>
+                        <div className='text-heading lg:mt-4 mt-5 lg:ml-4'>
                             <ul className="">
                                 {
                                     services.map((service) => (
                                         <li key={service.title}>
-                                            <div className="flex gap-x-5 text-nowrap lg:items-center text-lg lg:text-2xl font-extralight lg:font-light leading]">
+                                            <div className="flex gap-x-5 text-nowrap lg:items-center text-lg lg:text-[20px] lg:font-light leading]">
                                                 <div className="hidden lg:flex">
                                                     {service.icon}
                                                 </div>
@@ -75,7 +75,7 @@ const Main = () => {
                                 {
                                     skills.map((skill) => (
                                         <li key={skill.title}>
-                                            <div className="rounded-full border-[0.4px] border-white px-4 py-1 w-fit flex gap-x-3 text-nowrap lg:items-center text-lg lg:text-2xl lg:font-extralight text-white">
+                                            <div className="rounded-full border-[0.1px] border-white px-4 py-1 w-fit flex gap-x-3 text-nowrap lg:items-center text- lg:text-[18px] lg:font-extralight text-white">
                                                 <div className="flex items-center">
                                                     {skill.icon}
                                                 </div>
