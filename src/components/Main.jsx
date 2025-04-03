@@ -66,7 +66,7 @@ const Main = () => {
 
 
                 <div className='lg:w-1/3 '>
-                    <div className='transition-color-800 bg-primary h-[65vh] lg:p-8 p-4 rounded-[30px]'>
+                    <div className='transition-color-800 bg-primary h-[65vh] p-8 rounded-[30px]'>
                         <p className='transition-color-500 font-sans font-semibold lg:text-[6vh] text-4xl text-white z-10'>
                             Skills
                         </p>
