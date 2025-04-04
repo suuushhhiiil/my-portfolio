@@ -38,7 +38,7 @@ const NavBar = () => {
   ];
   return (
     <>
-      <nav className="transition-color ease-in-out duration-[600ms] sticky top-0 pt-[10px] lg:pt-[30px] z-50 backdrop-blur-lg h-[15vh]">
+      <nav className="transition-color ease-in-out duration-[600ms] sticky top-0 pt-[10px] lg:pt-[15px] z-50 backdrop-blur-lg h-[15vh]">
         <div className="z-50 top-0 flex items-center justify-between lg:px-20 px-6 py-4 relative">
           {
             //Logo

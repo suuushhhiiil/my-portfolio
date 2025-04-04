@@ -7,8 +7,6 @@ import viewMyWork from '../assets/view-my-work.png'
 import { services, skills } from "../utils/Sources";
 
 const Main = () => {
-
-
     return (
         <>
             <div className='lg:flex items-center justify-between lg:h-[85vh] lg:px-20 p-8 space-y-3 lg:space-y-0 lg:space-x-3'>
@@ -30,17 +28,20 @@ const Main = () => {
 
 
                 <div className='lg:w-1/3'>
-                    <div className={`transition-color-800 relative flex flex-col justify-between bg-secondary h-[38vh] p-8 rounded-[30px] overflow-clip`}>
-                        <p className='transition-color-500 font-sans font-semibold lg:text-[6vh] text-4xl text-heading z-10'>
-                            View Work
-                        </p>
-                        <div>
-                            <img src={viewMyWork} className='translate-x-[35%] lg:scale-[0.7] scale-[1.2] -z-100' alt="" />
+                    <Link to={"/work"}>
+                        <div className={`transition-color-300 relative flex flex-col justify-between bg-secondary h-[38vh] p-8 rounded-[30px] overflow-clip`}
+                        >
+                            <p className='transition-color-500 font-sans font-semibold lg:text-[6vh] text-4xl text-heading z-10'>
+                                View Work
+                            </p>
+                            <div>
+                                <img src={viewMyWork} className='translate-x-[35%] lg:scale-[0.7] scale-[1.2] -z-100' alt="" />
+                            </div>
+                            <div className='transition-all-500 absolute top-8 right-8 text-text'>
+                                <NorthEastIcon sx={{ fontSize: 30 }} />
+                            </div>
                         </div>
-                        <div className='transition-color-500 absolute top-8 right-8 text-text'>
-                            <NorthEastIcon sx={{ fontSize: 30 }} />
-                        </div>
-                    </div>
+                    </Link>
                     <div className='transition-color-800 relative flex flex-col bg-secondary h-[37vh] p-8 rounded-[30px] overflow-clip mt-3'>
                         <p className='transition-color-500 font-sans font-semibold lg:text-[6vh] text-4xl text-heading z-10'>
                             Services
